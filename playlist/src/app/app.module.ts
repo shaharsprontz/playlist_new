@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes }   from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { FormValidationComponent } from './login.component';
+import { FormValidationComponent } from './register/login.component';
 import { UserplaylistComponent } from './userplaylist/userplaylist.component';
 import { AppComponent } from "app/app.component";
+import { YoutubeapiComponent } from './youtubeapi/youtubeapi.component';
 
 const appRoutes: Routes = [
   {
@@ -15,17 +16,23 @@ const appRoutes: Routes = [
   {
     path: 'playlist',
     component: UserplaylistComponent,
+  },
+  {
+    path: 'youtubeapi',
+    component: YoutubeapiComponent,
   }];
 
 @NgModule({
   declarations: [
     AppComponent,
     FormValidationComponent,
-    UserplaylistComponent
+    UserplaylistComponent,
+    YoutubeapiComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],

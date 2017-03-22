@@ -17,7 +17,7 @@ $(function() {
           var results = response.result;
           $("#results").html("");
           $.each(results.items, function(index, item) {
-            $.get("tpl/item.html", function(data) {
+            $.get("assets/public/item.html", function(data) {
                 $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
             });
           });
@@ -33,7 +33,7 @@ function resetVideoHeight() {
 }
 
 function init() {
-    gapi.client.setApiKey("YOUR_PUBLIC_KEY");
+    gapi.client.setApiKey("AIzaSyDOC-onvBgQkv4NUoelJ9r9CEHDBUGmwng");
     gapi.client.load("youtube", "v3", function() {
         // yt api is ready
     });

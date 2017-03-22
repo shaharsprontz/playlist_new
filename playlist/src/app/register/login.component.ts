@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'complex-form',
   templateUrl: './login.component.html',
-  //styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css']
 })
 export class FormValidationComponent {
   // The FormGroup object as you may remember from the simple form example exposes various API’s for dealing with forms. Here we are creating a new object and setting its type to FormGroup

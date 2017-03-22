@@ -7,7 +7,7 @@ import { FormValidationComponent } from './register/login.component';
 import { UserplaylistComponent } from './userplaylist/userplaylist.component';
 import { AppComponent } from "app/app.component";
 import { YoutubeapiComponent } from './youtubeapi/youtubeapi.component';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { AlertModule } from 'ng2-bootstrap';
 
 
 const appRoutes: Routes = [

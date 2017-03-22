@@ -8,9 +8,9 @@ $(function() {
             part: "snippet",
             type: "video",
             q: encodeURIComponent($("#search").val()).replace(/%20/g, "+"),
-            maxResults: 3,
+            maxResults: 10,
             order: "viewCount",
-            publishedAfter: "2015-01-01T00:00:00Z"
+            publishedAfter: "2000-01-01T00:00:00Z"
        }); 
        // execute the request
        request.execute(function(response) {
@@ -21,16 +21,16 @@ $(function() {
                 $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
             });
           });
-          resetVideoHeight();
+        //   resetVideoHeight();
        });
     });
     
-    $(window).on("resize", resetVideoHeight);
+    // $(window).on("resize", resetVideoHeight);
 });
 
-function resetVideoHeight() {
-    $(".video").css("height", $("#results").width() * 9/16);
-}
+// function resetVideoHeight() {
+//     $(".video").css("height", $("#results").width() * 9/16);
+// }
 
 function init() {
     gapi.client.setApiKey("AIzaSyDOC-onvBgQkv4NUoelJ9r9CEHDBUGmwng");

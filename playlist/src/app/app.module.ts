@@ -8,12 +8,13 @@ import { UserplaylistComponent } from './userplaylist/userplaylist.component';
 import { AppComponent } from "app/app.component";
 import { YoutubeapiComponent } from './youtubeapi/youtubeapi.component';
 import { AlertModule } from 'ng2-bootstrap';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 const appRoutes: Routes = [
   {
-    path: '',
-    component: FormValidationComponent,
+    path: 'home',
+    component: HomepageComponent,
   },
   {
     path: 'playlist',
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'youtubeapi',
     component: YoutubeapiComponent,
+  },
+  {
+    path: 'complex-form',
+    component: FormValidationComponent,
   }];
 
 @NgModule({
@@ -29,7 +34,8 @@ const appRoutes: Routes = [
     AppComponent,
     FormValidationComponent,
     UserplaylistComponent,
-    YoutubeapiComponent
+    YoutubeapiComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

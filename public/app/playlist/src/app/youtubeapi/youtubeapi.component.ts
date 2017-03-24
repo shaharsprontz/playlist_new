@@ -8,9 +8,4 @@ import { Component } from '@angular/core';
 })
 
 
-export class YoutubeapiComponent {
-  submitForm(form: any): void{
-    console.log('Form Data: ');
-    console.log(form);
-  }
-}
+export class YoutubeapiComponent {}

@@ -8,7 +8,7 @@ $(function() {
             part: "snippet",
             type: "video",
             q: encodeURIComponent($("#search").val()).replace(/%20/g, "+"),
-            maxResults: 10,
+            maxResults: 5,
             order: "viewCount",
             publishedAfter: "2000-01-01T00:00:00Z"
        }); 
@@ -21,16 +21,9 @@ $(function() {
                 $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
             });
           });
-        //   resetVideoHeight();
        });
     });
-    
-    // $(window).on("resize", resetVideoHeight);
 });
-
-// function resetVideoHeight() {
-//     $(".video").css("height", $("#results").width() * 9/16);
-// }
 
 function init() {
     gapi.client.setApiKey("AIzaSyDOC-onvBgQkv4NUoelJ9r9CEHDBUGmwng");

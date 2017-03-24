@@ -1,0 +1,23 @@
+{
+  "name": "playlist_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "youtubeApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharsprontz/playlist_new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaharsprontz/playlist_new/issues"
+  },
+  "homepage": "https://github.com/shaharsprontz/playlist_new#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
